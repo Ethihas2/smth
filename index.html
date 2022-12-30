@@ -1,0 +1,58 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background.jpg">
+        <center>
+
+            <div class="btn btn-warning div_heading">
+                <h3>AI PING PONG GAME</h3>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#popup">Instructions</button>
+            </div>
+            <br><br>
+
+            <button class="btn btn-success button_start"  onclick="start_game()">Play Game</button>
+            <button class="btn btn-success button_start" onclick="restart()">Restart</button>
+            <br><br>
+            <h3 class="btn btn-danger" id="game-status"></h3>
+
+            <div id="canvas_div"></div>
+
+            <div id="popup" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+              
+                  <!-- Modal content-->
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      <h4 class="modal-title">Modal Header</h4>
+                    </div>
+                    <div class="modal-body">
+                     <h3>*Move your nose up for the slider to move up.</h3>
+                     <h3>*Move your nose down for the slider to move down.</h3>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+              
+                </div>
+              </div>
+              <h4 id="footer"> Addon Creator : Ethihas || Source Code: Prashant Shukla</h4>
+        </center>
+        <script src="main.js"></script>
+
+    </body>
+</html>
